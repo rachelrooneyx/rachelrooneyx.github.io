@@ -18,20 +18,36 @@
  <img class="fit-picture"
  src=".\roses.jpg" alt= "roses" width ="200" height="150"
  >
+ <style>
+ .button {
+     background-color: #4CAF50;
+     border: none;
+     color: white;
+     padding: 15px 32px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 16px;
+     margin: 4px 2px;
+     cursor: pointer;
+ }
+ </style>
+
+
  </div>
  </div>
-<div>
-  <div class="random">
+  <div class="random" id = "links">
  <p style="font-size:25px;">&#9829;Here is a link to My most used websites:</p>
  <a href="https://www.netflix.com/gb/">netlix.com</a>
  <p><a href="https://https://www.beautybay.com/">beautybay.com</a></p>
  <p><a href="https://https://www.prettylittlething.com/">prettyLittleThing.com</a></p>
 </div>
 <p> &#9829;At College I am studyig forensic science which consists of lots and lots of assignemts :( However it is very interesting</p>
-<p> &#9829;In my course, I study fire investigation, collecting evidence and of course crimology</p>
+<p> &#9829;In my course, I study fire investigation, collecting evidence and of course criminology</p>
 <img class="fit-picture"
 src=".\forensics.jpg" alt= "roses" width ="200" height="150"
 >
+<button onclick="toggleVisibility()">click here for magic</button>
 </body>
 </html>
 <style>
@@ -43,7 +59,20 @@ src=".\forensics.jpg" alt= "roses" width ="200" height="150"
     width:fit-content;
   }
   .random{
+    display:none;
     border: dotted 5px white;
     width:fit-content
   }
   </style>
+<script>
+  function toggleVisibility(){
+    var randomElement = document.getElementById("links")
+    if (randomElement.style.display==="none"){
+
+      randomElement.style.display="block"
+    } else {
+      randomElement.style.display="none"
+    }
+
+  }
+  </script>
